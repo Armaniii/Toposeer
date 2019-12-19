@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MapboxApplication"
+    >
+    <!--<com.yarolegovich.discretescrollview.DiscreteScrollView-->
+        <!--android:id="@+id/picker"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:dsv_orientation="vertical" >-->
+
+
+        <!--</com.yarolegovich.discretescrollview.DiscreteScrollView>-->
+
+<android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:elevation="15dp"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"/>
+    <com.mapbox.mapboxsdk.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="10dp"
+            mapbox:mapbox_cameraTargetLat="38.9098"
+            mapbox:mapbox_cameraTargetLng="-77.0295"
+            mapbox:mapbox_cameraZoom="12" />
+
+</LinearLayout>
+
